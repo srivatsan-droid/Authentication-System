@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: authSystem
+  datasource:
+    url: jdbc:postgresql://localhost:5432/auth
+    username: postgres
+    password: Sriram@#5
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+# JWT Configuration
+jwt:
+  secret: 404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970
+  expiration: 86400000 # Token expiration time in milliseconds (24 hours = 86400000 ms)
